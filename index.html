@@ -1,117 +1,113 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-        <style type="text/css">
-            * {
-                padding: 0;
-                margin: 10px;
-            }
-            li {
-                list-style-type: none;
-            }
-            .clear {
-                clear: both;
-            }
-            header {
-                width: 995px;
-                height: 110px;
-                margin-top: 10px;
-                border: solid 1px #cccccc;
-            }
-            #logo {
-                margin: 20px;
-                border-bottom: dotted 2px gray;
-                float: left;
-            }
-            #top {
-                float: right;
-                margin: 30px 20px 0 0;
-            }
-            nav {
-                width: 995px;
-                height: 50px;
-                margin-top: 10px;
-                padding-top: 10px;
-                border: solid 1px #cccccc;
-            }
-            nav li {
-                display: inline;
-                margin: 50px 30px;
-            }
-            section {
-                float: left;
-                margin-top: 10px;
-                border: soild 1px #cccccc;
-            }
-            aside {
-                float: left;
-                margin-top: 10px;
-                border: solid 1px #cccccc;
-            }
-            aside li {
-                margin-bottom: 50px;
-            }
-            footer {
-                width: 995px;
-                height: 80px;
-                border-top: solid 1px #cccccc;
-                margin-top: 20px;
-                border: solid 1px #cccccc;
-            }
-            #address {
-                float: left;
-                margin: 30px 0 0 20px;
-            }
-            #customer {
-                float: right;
-                margin: 30px 0 0 180px;
-                padding-right: 20px;
-            }
-            #page {
-                width : 1010px;
-                margin : auto;
-                border : solid 1px #cccccc;
-            }
-        </style>
-    </head>
-    <body id = "page">
-        <head>
-            <div id="logo">
-                신뢰로 보답하는 루바토 손해보험
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하나투어</title>
+
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="script/jquery-3.6.0.js"></script>
+    <script src="script/custom.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <header class="inner">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://image.hanatour.com/usr/static/img2/pc/com/ico-hanatour-logo2.png" alt="">
+                </a>
             </div>
-            <div id="top">
-                로그인 | 회원가입 | 사이트맵 | 회사소개
+            <div class="gnb">
+                <a href="#none">로그인</a> |
+                <a href="#none">회원가입</a> |
+                <a href="#none">고객센터</a> |
+                <a href="#none">회사소개</a>
             </div>
-        </head>
-        <div class="clear"></div>
-        <nav>
-            <ul>
-                <li>손해보험상식</li>
-                <li>회사소개</li>
-                <li>보험상품안내</li>
-                <li>마이페이지</li>
-                <li>고객센터</li>
-                <li>보험료안내</li>
+        </header>
+        <nav class="inner">
+            <ul class="menu">
+                <li><a href="#none">해외여행</a></li>
+                <li><a href="#none">제주/국내여행</a></li>
+                <li><a href="airline.html">항공</a></li>
+                <li><a href="#none">호텔/펜션</a></li>
+                <li><a href="#none">투어/입장권</a></li>
+                <li><a href="#none">테마여행</a></li>
+                <li><a href="#none">럭셔리여행</a></li>
+                <li><a href="#none">하나LIVE</a></li>
             </ul>
         </nav>
-        <div class="clear"></div>
-        <section>
-            <img src="./img/캡처.PNG"></section>
-        <aside>
-            <ul>
-                <li>보험료 계산하기</li>
-                <li>손해보험 FAQ</li>
-            </ul>
-        </aside>
-        <div class="clear"></div>
-        <footer>
-            <div id="address">
-                대표이사 : 홍길동 | 사업자 등록번호 : 123 - 456 - 7890
+        <main id="intro" class="inner">
+            <div class="inr">
+                <div class="photo">
+                    <div>
+                        <a href="#none"><img src="images/amsterdam.jpg" alt="암스테르담"></a>
+                        <a href="#none"><img src="images/jeju.jpg" alt="제주"></a>
+                        <a href="#none"><img src="images/newyork.jpg" alt="뉴욕"></a>
+                        <a href="#none"><img src="images/polynesia.jpg" alt="폴리네시아"></a>
+                    </div>
+                </div>
             </div>
-            <div id="customer">
-                고객센터 : 1588 - 1234
+        </main>
+        <section id="best" class="inner">
+            <h2>이달의 추천 여행지</h2>
+            <div class="tourlist">
+                <div>
+                    <div class="tourplace">
+                        <div class="tour-photo">
+                            <img src="images/img01.jpg" alt="">
+                        </div>
+                        <div class="tour-info">
+                            <b class="title">스페인 8,9,10일 #바르셀로나 시내숙박</b>
+                            <p class="subtitle">꼭 먹어봐야할 스페인음식 10가지 맛보기</p>
+                            <b class="price">2,690,000원~</b>
+                        </div>
+                    </div>
+                    <div class="tourplace">
+                        <div class="tour-photo">
+                            <img src="images/img02.jpg" alt="">
+                        </div>
+                        <div class="tour-info">
+                            <b class="title">동서양의 만남, 터키 일주 8,9,10일</b>
+                            <p class="subtitle">전일정 5성호텔 / 항공 이동으로 편안한 일정</p>
+                            <b class="price">899,000원~</b>
+                        </div>
+                    </div>
+                    <div class="tourplace">
+                        <div class="tour-photo">
+                            <img src="images/img03.jpg" alt="">
+                        </div>
+                        <div class="tour-info">
+                            <b class="title">괌 자유여행 4일 #츠바키 #카멜리아룸</b>
+                            <p class="subtitle">SNS 핫플호텔 / 괌 최고 6성급 호텔</p>
+                            <b class="price">999,000원~</b>
+                        </div>
+                    </div>
+                    <div class="tourplace">
+                        <div class="tour-photo">
+                            <img src="images/img04.jpg" alt="">
+                        </div>
+                        <div class="tour-info">
+                            <b class="title">[출발확정] 크리스마스 무착륙 관광비행</b>
+                            <p class="subtitle">#12월25일 #PCR,격리없음 #인천공항면세쇼핑</p>
+                            <b class="price">131,900원~</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div>
+                <div id="address">
+                    대표이사 : 홍길동 | 사업자 등록번호 : 123 - 456 - 7890
+                </div>
+                <div id="customer">
+                    고객센터 : 1588 - 1234
+                </div>
             </div>
         </footer>
-    </body>
+    </div>
+</body>
 </html>
