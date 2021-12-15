@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/airline.css">
 
     <script src="script/jquery-3.6.0.js"></script>
-    <script src="script/custom.js"></script>
+    <script src="script/airline.js"></script>
 
 </head>
 <body>
@@ -21,7 +21,7 @@
                 </a>
             </div>
             <div class="gnb">
-                <a href="#none">로그인</a> |
+                <a href="login.html">로그인</a> |
                 <a href="#none">회원가입</a> |
                 <a href="#none">고객센터</a> |
                 <a href="#none">회사소개</a>
@@ -39,36 +39,28 @@
                 <li><a href="#none">하나LIVE</a></li>
             </ul>
         </nav>
-        <main id="intro" class="inner">
-            <div class="inr">
-                <div class="photo">
-                    <div>
-                        <a href="#none"><img src="images/amsterdam.jpg" alt="암스테르담"></a>
-                        <a href="#none"><img src="images/jeju.jpg" alt="제주"></a>
-                        <a href="#none"><img src="images/newyork.jpg" alt="뉴욕"></a>
-                        <a href="#none"><img src="images/polynesia.jpg" alt="폴리네시아"></a>
-                    </div>
-                </div>
-            </div>
-        </main>
         <section id="airline">
             <div>
                 <div class="airline-menu">
-                    <p>왕복</p>
-                    <p>편도</p>
-                    <p>다구간</p>
+                    <p class="rt">왕복</p>
+                    <p class="ow">편도</p>
+                    <p class="ms">다구간</p>
                 </div>
-                <div class="round-trip">
-                    <a href="#none"><span>출발지</span></a>
-                    <a href="#none"><span>도착지</span></a>
-                    <a href="#none"><span>21.12.13</span></a>~
-                    <a href="#none"><span>21.12.14</span></a>
+                <div class="round-trip active">
+                    <div>
+                        <a href="#none"><span>출발지</span></a>~
+                        <a href="#none"><span>도착지</span></a>
+                    </div>
+                    <div>
+                        <a href="#none"><span>21.12.13</span></a>~
+                        <a href="#none"><span>21.12.14</span></a>
+                    </div>
                     <a href="#none"><span>성인 1명 · 일반석</span></a>
                     <button>예약</button>
                 </div>
                 <div class="one-way">
                     <div>
-                        <a href="#none"><span>출발지</span></a>
+                        <a href="#none"><span>출발지</span></a>~
                         <a href="#none"><span>도착지</span></a>
                     </div>
                     <a href="#none"><span>21.12.13</span></a>
@@ -76,20 +68,20 @@
                     <button>예약</button>
                 </div>
                 <div class="multi-section">
-                    <div class="">
-                        <a href="#none"><span>출발지</span></a>
+                    <div>
+                        <a href="#none"><span>출발지</span></a>~
                         <a href="#none"><span>도착지</span></a>
                         <a href="#none"><span>21.12.13</span></a>
                     </div>
                     <div>
-                        <a href="#none"><span>출발지</span></a>
+                        <a href="#none"><span>출발지</span></a>~
                         <a href="#none"><span>도착지</span></a>
                         <a href="#none"><span>21.12.14</span></a>
                     </div>
                     <a href="#none"><span>성인 1명 · 일반석</span></a>
                     <button>구간 추가</button>
                     <button>예약</button>
-                </div>
+                </div>                    
             </div>
         </section>
         <footer>
