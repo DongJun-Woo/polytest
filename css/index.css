@@ -1,0 +1,178 @@
+@charset "utf-8";
+/* Reset CSS */
+*{ box-sizing: border-box; }
+body{ margin: 0; font-size: 15px; }
+a{ text-decoration: none; color: #222;}
+ul{ list-style: none; }
+input,button,textarea{
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+
+/* Default CSS */
+.inner{
+    width: 1300px;
+    margin: auto;
+}
+
+/* Header CSS */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.logo{}
+.logo a{}
+.logo img{}
+.gnb{}
+.gnb a{
+    color: #333;
+    font-size: 14px;
+}
+
+/* Nav CSS */
+nav{
+    border: 1px solid #333;
+    background-color:darkslateblue;
+}
+ul.menu{
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+    display: flex;
+}
+ul.menu li{}
+ul.menu li a{
+    padding: 0 20px;
+    font-weight: 600;
+    color: #fff;
+}
+ul.menu li a:hover{
+    background-color: #fff;
+    color: darkslateblue;
+}
+
+/* Main CSS */
+main#intro{
+    height: 500px;
+}
+main#intro,
+nav{
+    box-shadow: 5px 5px 10px #555;
+}
+main#intro .inr{
+    height: 100%;
+}
+.photo{
+    width: 1300px;
+    height: 500px;
+    overflow: hidden;
+}
+.photo div{
+    animation: sideSlide 15s infinite;
+    width: 5200px;
+    height: 100%;
+    background-color: #aaa;
+}
+.photo a{
+    display: block;
+    float: left;
+}
+.photo img{
+    width: 1300px;
+    height: 100%;
+}
+
+/* #best CSS */
+section#best{
+    height: 400px;
+}
+h2{
+    margin-top: 50px;
+}
+.tourlist{}
+.tourlist > div{
+    display: flex;
+    justify-content: space-between;
+}
+.tourplace{
+    border: 1px solid #aaa;
+    border-radius: 5% 0 0 0;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px #aaa;
+}
+.tour-photo{
+    width: 282px;
+    height: 210px;
+    overflow: hidden;
+}
+.tour-photo img{
+    max-width: 100%;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+.tour-info{
+    margin-top: 10px;
+}
+.tour-info b.title{
+    font-size: 15px;
+}
+.tour-info p.subtitle{
+    font-size: 12px;
+}
+.tour-info b.price{
+    font-size: 20px;
+}
+
+/* Footer CSS */
+footer{
+    background-color: #555;
+    height: 60px;
+    padding: 20px;
+}
+footer > div{
+    width: 1300px;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#address{}
+#customer{}
+
+
+/* keyFrames */
+@keyframes sideSlide{
+    0%{
+        margin-left: 0;
+    }
+    20%{
+        margin-left: 0;
+    }
+    25%{
+        margin-left: -1300px;
+    }
+    45%{
+        margin-left: -1300px;
+    }
+    50%{
+        margin-left: -2600px;
+    }
+    70%{
+        margin-left: -2600px;
+    }
+    75%{
+        margin-left: -3900px;
+    }
+    95%{
+        margin-left: -3900px;
+    }
+    100%{
+        margin-left: 0;
+    }
+}

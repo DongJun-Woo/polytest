@@ -1,0 +1,20 @@
+$(function(){
+    $('.rt').on("click",function(){
+        $(this).siblings().css({'color':'#aaa','border-bottom-color':'transparent'});
+        $(this).css({'color':'#09b0b3','border-bottom-color':'darkslateblue'});
+        $('.round-trip').siblings().removeClass('active');
+        $('.round-trip').addClass('active');
+    })
+    $('.ow').on("click",function(){
+        $(this).siblings().css({'color':'#aaa','border-bottom-color':'transparent'});
+        $(this).css({'color':'#09b0b3','border-bottom-color':'darkslateblue'});
+        $('.one-way').siblings().removeClass('active');
+        $('.one-way').addClass('active');
+    })
+    $('.ms').on("click",function(){
+        $(this).siblings().css({'color':'#aaa','border-bottom-color':'transparent'});
+        $(this).css({'color':'#09b0b3','border-bottom-color':'darkslateblue'});
+        $('.multi-section').siblings().removeClass('active');
+        $('.multi-section').addClass('active');
+    })
+})

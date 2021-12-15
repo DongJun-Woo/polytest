@@ -1,0 +1,157 @@
+@charset "utf-8";
+/* Reset CSS */
+*{ box-sizing: border-box; }
+body{ margin: 0; font-size: 15px; }
+a{ text-decoration: none; color: #222;}
+ul{ list-style: none; }
+input,button,textarea{
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+
+/* Default CSS */
+.inner{
+    width: 1300px;
+    margin: auto;
+}
+
+/* Header CSS */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+.logo{}
+.logo a{}
+.logo img{}
+.gnb{}
+.gnb a{
+    color: #333;
+    font-size: 14px;
+}
+
+/* Nav CSS */
+nav{
+    border: 1px solid #333;
+    background-color:darkslateblue;
+}
+ul.menu{
+    border: 1px solid #fff;
+    border-left: none;
+    border-right: none;
+    display: flex;
+}
+ul.menu li{}
+ul.menu li a{
+    padding: 0 20px;
+    font-weight: 600;
+    color: #fff;
+}
+ul.menu li a:hover{
+    background-color: #fff;
+    color: darkslateblue;
+}
+
+/* Login CSS */
+#login{
+    height: 700px;
+    position: relative;
+}
+.login-inner{
+    width: 400px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 0 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.login-inner h2{
+    margin-bottom: 50px;
+    color: darkslateblue;
+}
+.login-inner > div{}
+.login-inner > div p{
+    display: inline-block;
+    width: 70px;
+    color: darkslateblue;
+    font-weight: bold;
+}
+.login-inner > div input{
+    border: 2px solid darkslateblue;
+    padding: 5px;
+    transition: 0.3s;
+}
+.login-inner > div input:focus{
+    border-color: transparent;
+    border-bottom-color: darkslateblue;
+}
+.login-inner > input{
+    padding: 10px 50px;
+    margin: 50px 0;
+    border-radius: 10px;
+    border-color: transparent;
+    color: #fff;
+    background-color: darkslateblue;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.login-inner > input:hover{
+    color: darkslateblue;
+    background-color: #fff;
+    border-color: darkslateblue;
+}
+
+/* Footer CSS */
+footer{
+    background-color: #555;
+    height: 60px;
+    padding: 20px;
+}
+footer > div{
+    width: 1300px;
+    margin: auto;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#address{}
+#customer{}
+
+/* keyFrames */
+@keyframes sideSlide{
+    0%{
+        margin-left: 0;
+    }
+    20%{
+        margin-left: 0;
+    }
+    25%{
+        margin-left: -1300px;
+    }
+    45%{
+        margin-left: -1300px;
+    }
+    50%{
+        margin-left: -2600px;
+    }
+    70%{
+        margin-left: -2600px;
+    }
+    75%{
+        margin-left: -3900px;
+    }
+    95%{
+        margin-left: -3900px;
+    }
+    100%{
+        margin-left: 0;
+    }
+}
